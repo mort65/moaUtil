@@ -24,7 +24,6 @@ namespace
 
     std::vector<RE::TESForm*> GetItemsByType(RE::StaticFunctionTag*, RE::TESObjectREFR* a_container, std::vector<UINT32> a_types)
     {
-        SKSE::log::info("GetItemsByType");
         std::vector<RE::TESForm*> filtered;
 
         if (!a_container || a_types.empty()) {
