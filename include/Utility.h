@@ -1,6 +1,9 @@
 #pragma once
 
-class Utility : public Singleton<Utility>
+namespace moaUtil
 {
-public:
-};
+    namespace Utility
+    {
+        bool RegisterFunctions(RE::BSScript::IVirtualMachine* vm);
+    } // namespace Utility
+} // namespace moaUtil
